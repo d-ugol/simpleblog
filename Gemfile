@@ -52,7 +52,7 @@ end
 
 group :production do
   # DU. For Heroku, use PostgreSQL instead of Sqlite3
-  gem 'pg' '~> 0.21.0'
+  gem 'pg', '~> 0.21.0'
   gem 'rails_12factor'
 end
 
