@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.7'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -50,7 +52,7 @@ end
 
 group :production do
   # DU. For Heroku, use PostgreSQL instead of Sqlite3
-  gem 'pg'
+  gem 'pg' '~> 0.21.0'
   gem 'rails_12factor'
 end
 
